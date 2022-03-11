@@ -6,6 +6,8 @@ navLinks.addEventListener("click", (e) => {
   if (e.target.dataset.part) {
     e.preventDefault();
     const target = document.querySelector(`.${e.target.dataset.part}`);
-    target.scrollIntoView({ behavior: "smooth" });
+    const y = target.getBoundingClientRect().top + window.scrollY - 30;
+    window.scrollTo({ behavior: "smooth", top: y });
+    console.log(y);
   }
 });

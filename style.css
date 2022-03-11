@@ -1,8 +1,15 @@
 header {
-  font-size: 20rem;
+  font-size: 15rem;
+  position: relative;
+  bottom: 5rem;
+  z-index: 1;
 }
 
+ul {
+  list-style: none;
+}
 .nav__links {
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,4 +41,8 @@ a {
 }
 
 .app__links {
+}
+
+.myApps {
+  font-size: 5rem;
 }
